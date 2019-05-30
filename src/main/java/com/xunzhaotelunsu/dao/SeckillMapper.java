@@ -1,12 +1,13 @@
 package com.xunzhaotelunsu.dao;
 
 import com.xunzhaotelunsu.entity.Seckill;
+import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.Date;
 import java.util.List;
 import java.util.Map;
-
+@Mapper
 public interface SeckillMapper {
     /**
      * 根据传过来的<code>seckillId</code>去减少商品的库存.
